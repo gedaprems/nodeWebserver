@@ -58,6 +58,8 @@ app.get('/*', (req,res) =>{
 })
 
 
+// Task: Create a render for 404 page and also setup header and footer for it. 
+
 app.listen(3000,()=>{
     console.log('Server is up on port 3000!')
 })
