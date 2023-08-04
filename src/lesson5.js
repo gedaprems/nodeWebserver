@@ -1,3 +1,5 @@
+// lesson 5 : Dynamic pages with template | hbs added. 
+
 const path = require('path')
 const express = require('express')
 
