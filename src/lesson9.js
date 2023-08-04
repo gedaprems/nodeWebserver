@@ -36,7 +36,16 @@ app.get('/help', (req,res)=>{
     })
 })
 
+// Goal : Updated weather endpoint to accept address
+//
+// 1. No address? Send back the error message
+// 2. Address? Send back the static JSON
+//    - Add address property onto JSON which returns the provided address
+// 3. Test /weather and /weather?address=chandrapur 
+
 app.get('/weather', (req,res) =>{
+    // console.log(req.query)
+
     if(!req.query.address){
         return res.send({
             error : 'You must provide the address!'
