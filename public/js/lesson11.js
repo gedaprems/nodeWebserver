@@ -39,6 +39,9 @@ const search = document.querySelector('input')
 //     console.log(location)
 // })
 
+// const message1 = document.querySelector('#message-1')
+
+// message1.textContent = 'From JavaScript'
 
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault()

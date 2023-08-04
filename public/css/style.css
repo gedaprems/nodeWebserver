@@ -42,3 +42,15 @@ header a{
     width: 250px;
 }
 
+input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    
+}
+button{
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+}
