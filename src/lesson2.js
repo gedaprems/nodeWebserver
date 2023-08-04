@@ -1,3 +1,5 @@
+// lesson 2 : Serving up html and json
+
 const express = require('express')
 
 const app = express()
