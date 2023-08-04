@@ -1,15 +1,19 @@
-// lesson 5 : Dynamic pages with template | hbs added. 
+// Customising the view directory 
 
 const path = require('path')
 const express = require('express')
 
 const app = express()
+
+// Define path for Express config
 const publicDirPath = path.join(__dirname, '../public')
+const viewsPath = path.join(__dirname, '../templates')
 
-
+// Setup handlebars engine and views location
 app.set('view engine','hbs')
+app.set('views', viewsPath)
 
-// set up public folder for the node app
+// Setup static directory to serve
 app.use(express.static(publicDirPath))
 
 app.get('', (req,res)=>{
