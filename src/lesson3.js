@@ -1,3 +1,5 @@
+// lesson 3 : serving up the static assest
+
 const path = require('path')
 const express = require('express')
 
