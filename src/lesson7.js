@@ -1,3 +1,5 @@
+// lesson 6 : added partial path and also registered partial location to the hbs.registerPartials() 
+
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
