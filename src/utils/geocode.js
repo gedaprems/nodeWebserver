@@ -3,7 +3,7 @@ const {maxboxApiToken} = require('../apiToken/apiToken')
 
 const geocode = (address,callback) =>{
     const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'+ address +'.json?access_token='+maxboxApiToken+'&limit=1'
-
+    console.log(url)
     request({url, json: true}, (error, response)=>{
         if(error){
             callback('Unable to connect to location service!',undefined)
